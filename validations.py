@@ -23,7 +23,7 @@ def validation_password(password):
                 "Message":"password must contain at least  one  Symbol"
             },400
     return None
-def required_fields(required_field,data):
+def required(required_field,data):
     for field in required_field:
         if field not in data:
             return{
